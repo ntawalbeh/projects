@@ -1,0 +1,249 @@
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+
+
+:root {
+  direction: rtl;
+}
+
+
+body {
+  background-color: #161632;
+  background-image:  URL(../images/bgM.png);
+  background-position:  top center;
+  background-repeat: no-repeat;
+  background-size:  auto;
+  background-attachment: fixed;
+  font-family: "Tajawal";
+  color: white;
+
+  
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    
+    background-color: #161632;
+    background-image:  URL(../images/messistegen.png);
+    background-position:  top center;
+    background-repeat: no-repeat;
+    background-size:  auto;
+    background-attachment: fixed;
+    font-family: "Tajawal";
+    color: white;
+  }
+
+
+}
+
+
+#heading{
+  text-align: center;
+ 
+  -webkit-backdrop-filter: blur(20px);
+ 
+          backdrop-filter: blur(20px);
+}
+
+.navigation {
+  color: wheat;
+  background-color: #081825;
+}
+
+.sliders {
+  margin: 10% 0 2% 0; /* the slider outer     */
+}
+
+
+
+.site-footer {
+  border-top: solid 2px;
+  border-color: #edbc00;
+ 
+
+  color: wheat;
+}
+
+.site-footer .colom2-inner {
+  list-style-type: none;
+}
+
+.site-footer .colom2-inner a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.site-footer .colom2-inner a:hover {
+  text-decoration: none;
+  color: #edbc00;
+}
+
+.site-footer .colom3-inner:before {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 100%; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-top: 1px solid #edbc00; /* This creates the border. Replace black with whatever color you want. */
+
+  font-size: 14px;
+}
+#tableContainer{
+  margin-top: 35%; margin-bottom:45%;
+}
+@media (min-width: 1200px) {
+  #tableContainer {
+
+    margin-top: 15%; margin-bottom:25%;
+  }
+ 
+
+ 
+}
+
+
+@media (min-width: 1200px) {
+  #indexContainer {
+    width: 50%;
+    margin-top: 15%; margin-bottom:15%;
+  }
+ 
+
+ 
+}
+
+.container .row .col-12 a .card  {
+  border-radius: 10px;
+  background: #081825; 
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 24, 37, 0.65)), to(rgba(8, 24, 37, 0.65))); 
+  background: -o-linear-gradient(top, rgba(8, 24, 37, 0.65) 0%, rgba(8, 24, 37, 0.65) 100%); 
+  background: linear-gradient(180deg, rgba(8, 24, 37, 0.65) 0%, rgba(8, 24, 37, 0.65) 100%);
+}
+
+.container .row .col-12 a .card img {
+
+max-height: 75%;
+
+
+}
+.container .row .col-12 a {
+text-decoration: none;
+
+}
+
+
+.share{
+text-align: center;
+}
+
+
+
+
+/* players styles*/
+
+
+
+
+
+
+
+section .section-title {
+  text-align: center;
+  color: #edbc00;
+  margin-bottom: 50px;
+ 
+}
+
+#team .card {
+  border: none;
+  background: #08182598;
+  border-radius: 10px;
+  font-size: 16 px;
+  
+
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+  border-radius: .25rem;
+}
+
+
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.mainflip {
+  -webkit-transition: 1s;
+  -webkit-transform-style: preserve-3d;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -moz-transform: perspective(1000px);
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transition: 1s;
+  transition: 1s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.frontside {
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+  -webkit-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+.backside {
+ margin-left: 10%;
+ margin-right: 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #08182598;
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+
+}
+
+
+@media (min-width: 576px) { .backside  {
+  margin-left: 0;
+  margin-right: 0;
+
+}
+.frontside  {
+  margin-left: 0;
+  margin-right: 0;
+
+}} 
+
+
+@media (max-width: 576px) {
+  #footerLogo
+  {
+    width: 90%;
+}
+}
+
+@media (max-width: 768px) {
+  #footerLogo{
+    width: 70%;
+}}
+
+
+@media (max-width: 2000px) {
+  #footerLogo{
+    width: 30%;
+}}

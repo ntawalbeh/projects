@@ -1,0 +1,19 @@
+
+RewriteEngine on
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+
+# END WordPress
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^barshalony\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.barshalony\.com$
+RewriteRule ^/?$ "https\:\/\/barshalony\.com\/" [R=301,L]
+
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
